@@ -78,6 +78,19 @@ npm run dev
 
 ---
 
+## 🚀 Vercel Deployment (Frontend)
+
+The StreamPay frontend can be easily deployed to Vercel:
+
+1. **Connect Repository**: Log in to [Vercel](https://vercel.com/) and import your GitHub repository.
+2. **Configure Project**:
+   - **Framework Preset**: Next.js
+   - **Root Directory**: Select `frontend` (crucial since this is a monorepo).
+3. **Environment Variables**: Add any required `.env` variables in the Vercel dashboard.
+4. **Deploy**: Click "Deploy" and enjoy your live application!
+
+---
+
 ## 👥 Organization
 
 - **OpenGuild:** A Web3 builder community empowering the Polkadot ecosystem in APAC. [Discord](https://discord.gg/WWgzkDfPQF)
