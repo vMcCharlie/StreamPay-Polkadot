@@ -229,8 +229,8 @@ function StreamListItem({
 }) {
   const { data } = useStreamData(id);
   if (!data) return null;
-  const [sender, recipient, token, deposit, withdrawn, startTime, stopTime, active] =
-    data as [`0x${string}`, `0x${string}`, `0x${string}`, bigint, bigint, bigint, bigint, boolean];
+  const [sender, recipient, token, deposit, withdrawn, startTime, stopTime, curveType, active] =
+    data as [`0x${string}`, `0x${string}`, `0x${string}`, bigint, bigint, bigint, bigint, number, boolean];
 
   if (statusFilter === 'active' && !active) return null;
   if (statusFilter === 'ended' && active) return null;
@@ -245,6 +245,7 @@ function StreamListItem({
       withdrawn={withdrawn}
       startTime={startTime}
       stopTime={stopTime}
+      curveType={curveType}
       active={active}
       userAddress={userAddress}
     />

@@ -48,8 +48,8 @@ export default function StreamDetailPage({ params }: { params: Promise<{ id: str
     isConfirming: isConfirmingCancel
   } = useCancelStream();
 
-  const [sender, recipient, token, deposit, withdrawnCount, startTime, stopTime, active] =
-    (streamData as [`0x${string}`, `0x${string}`, `0x${string}`, bigint, bigint, bigint, bigint, boolean]) || [null, null, null, 0n, 0n, 0n, 0n, false];
+  const [sender, recipient, token, deposit, withdrawnCount, startTime, stopTime, curveType, active] =
+    (streamData as [`0x${string}`, `0x${string}`, `0x${string}`, bigint, bigint, bigint, bigint, number, boolean]) || [null, null, null, 0n, 0n, 0n, 0n, 0, false];
 
   const asset = getAssetByAddress(token || "");
   const decimals = asset?.decimals ?? 18;
