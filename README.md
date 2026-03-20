@@ -2,6 +2,8 @@
 
 StreamPay is a non-custodial payment streaming protocol designed to empower the next generation of builders on Polkadot. By leveraging the **Polkadot Virtual Machine (PVM)** and **EVM Smart Contracts**, StreamPay enables real-time, per-second distribution of native assets with extreme precision and gas efficiency.
 
+![StreamPay Homepage Preview](./images/homepage.png)
+
 ---
 
 ## 🏆 Hackathon Qualifications
@@ -16,6 +18,18 @@ StreamPay is purposefully built to compete in both **Track 1** and **Track 2** o
 - **Category 1: PVM-experiments:** StreamPay features a **Custom PVM Math Extension**. High-precision math for non-linear streaming curves (Exponential & Sigmoid) is offloaded to a native Rust precompile, which is then called from Solidity via `staticcall`.
 - **Category 2: Polkadot Native Assets:** StreamPay natively streams **PAS** (Paseo chain token) directly on Asset Hub.
 - **Category 3: Precompiles:** The architecture is designed to interface with native Polkadot precompiles for optimized state management and math operations.
+
+---
+
+## 🖼️ Visual Overview
+
+| Dashboard | Create Stream |
+| :---: | :---: |
+| ![Dashboard](./images/dashboard.png) | ![Create Stream](./images/create-stream.png) |
+
+| Withdraw Funds |
+| :---: |
+| ![Withdraw Funds](./images/withdraw-funds.png) |
 
 ---
 
